@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+.container {
+  display: flex;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.colorbox{
+  background-image: linear-gradient(to right, #4062BB , #59C3C3);
+  width: 1440;
+  height: 649;
+}
+#snapdrop{
+  padding-top: 40;
+  padding-left: 241;
+  size: 21;
+  color: white;
+}
+.linkbox{
+  background-color: #F2F7F8;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  height: 99;
+}
+.feature{
+  background-color: blueviolet;
+}
+.editor{
+  background-color: aqua;
+}
+.text{
+width: 452;
+color: white;
+margin-top: 231;
+margin-left: 235;
+font-weight: 400;
+vertical-align: middle;
+}
+.text1{
+  font-family: roboto;
+  font-size: small;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 2px;
+}
+ ul{
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  margin-left: 170;
+  gap: 2px;
+}
+.mobileimg{
+  margin-top: -260;
+  order: 2;
+  margin-left: auto;
+
+}
+#nav{
+  margin-top: -45;
+}
+#textfeature{
+  color: #000000 40%;
+  font-weight: 100;
+  font-size: 18px;
+  margin-left: 235;
+  padding-top: 20;
+}
+.nav2 ul{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20;
+}
+.Amazing{
+  width: 1000;
+}
+#amzingtext{
+  font-size: xx-large;
+  font-weight: 900;
+}
+.amzingtext1 {
+  font-size: 16;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000 40%;
+  text-align: center;
+
+}
+#tabletetx1{
+  font-size: 20;
+  text-align: center;
+}
+#item-wrap{
+  display: block;
+  margin: 0 auto;
+}

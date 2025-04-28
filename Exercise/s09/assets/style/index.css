@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2c3e50;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.container{
+width: 312px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.album-card {
+  background-color: #3d4a59;
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  max-width: 320px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.album-cover {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.album-info {
+  padding: 0 4px;
+}
+
+.album-title {
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 6px 8px;
+  margin-bottom: 10px;
+}
+
+.album-meta {
+  font-size: 12px;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+
+.album-description {
+  font-size: 12px;
+  color: #bbb;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.spotify-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #141414;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.spotify-btn img {
+  width: 20px;
+  height: 20px;
+}
+.title{
+  width: 1000px;
+  height: 38px;
+  font-family: 'lato';
+  font-weight: 700p;
+  font-size: 32px;
+  line-height: 100%;
+  color: rgba(217, 209, 199, 1);
+  margin-bottom: 25px;
+}
+
+.track-list {
+  list-style-type: decimal-leading-zero;
+}
+.track-list li::marker{
+  color: rgba(217, 209, 199, 0.5);
+  font-family: 'lato';
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 100%;
+}
+.track-line {
+
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 14px;
+  gap: 25px;
+  line-height: 36px;
+  padding:5px;
+
+}
+
+.track-number {
+  width: 28px;
+  height: 24px;
+  flex-shrink: 0;
+  color: rgba(217, 209, 199, 0.5);
+  font-family: 'lato';
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 100%;
+}
+.track-line::before{
+  content: ' ';
+  border-bottom: dashed gray 2px;
+  display: block;
+  flex-grow: 1;
+  order: 2;
+}
+.track-title {
+  flex-shrink: 0;
+  color: rgba(217, 209, 199, 1);
+  font-family: 'lato';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  order: 1;
+}
+
+.track-time {
+  font-family: 'lato';
+  font-size: 20px;
+  font-weight: 400;
+  flex-shrink: 0;
+  color: rgba(217, 209, 199, 0.5);
+  white-space: nowrap;
+  order: 3;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.album {
+  width: calc(50% - 8px); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.album img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.album-name {
+  margin-top: 8px;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: rgba(217, 209, 199, 1);
+}
+.footer {
+  width: 100%;
+  height: 67px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(19, 16, 38, 1);
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-top: auto;
+}
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .album-card {
+    padding: 12px;
+  }
+
+  .album-title {
+    font-size: 16px;
+  }
+
+  .album-meta,
+  .album-description {
+    font-size: 12px;
+  }
+
+  .spotify-btn {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .spotify-btn img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .track-list {
+    padding: 0 12px;
+  }
+
+  .track-line {
+    gap: 12px;
+    font-size: 13px;
+  }
+
+  .other-albums {
+    font-size: 18px;
+    margin: 24px 0 12px;
+  }
+
+  .box {
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .album {
+    width: 48%;
+    padding: 6px;
+  }
+
+  .album-name {
+    font-size: 11px;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+

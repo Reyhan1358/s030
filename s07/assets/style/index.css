@@ -1,0 +1,28 @@
+body{
+    /* background-color: red; */
+}
+.container{
+    width: 980;
+    margin-right: auto;
+    margin-left: auto;
+}
+.overflow .parent{
+    background-color: greenyellow;
+    height: 300px;
+    padding: 0 12px;
+    /* overflow: auto; */
+}
+.overflow .child{
+    background-color: aqua;
+    height: 50vh;
+    width: 10vw;
+}
+.position .parent{
+    height: 200px;
+    border: solid 2px blue;
+}
+.position .child{
+    height: 100px;
+    border: solid 2px red;
+    position: absolute;
+}

@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, white 50%,  #F8F8F8 50%);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 797px;
+    margin-top: 128;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sidebar {
+    padding: 30px;
+    width: 700;
+}
+
+.fontwrape h1{
+    font-size: 30px;
+    font-weight: 100;
+    padding-right: 200;
+    line-height: 0.5;
+
+}
+.textwrape{
+    color: #B8B8B8;
+    font-weight: 700;
+    text-align: left;
+}
+.textwrape span{
+    font-weight: 400;
+}
+.textwrape p{
+    font-weight: 100;
+    font-size: 12px;
+}
+.margin{
+    margin-top: 90;
+    margin-left: 300;
+}
+.p1{
+    background-color: #333333;
+    color: #F8F8F8;
+    display: inline;
+}
+.section {
+    margin-top: 20px;
+}
+
+.section h2 {
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.dots {
+    display: flex;
+    gap: 5px;
+    margin-left: 200;
+}
+
+.dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.full {
+    background: black;
+}
+
+.half {
+    background: gray;
+}
+
+.empty {
+    background: lightgray;
+}
+.content {
+    padding: 40px;
+    width: 70%;
+    margin-top: 100;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}
+
+.contact-info  p{
+    margin: 20px 0;
+    font-size: 16px;
+    color: #B8B8B8;
+    font-weight: 400;
+    /* line-height: 26; */
+}
+h2 {
+    color: #333;
+    padding-bottom: 5px;
+}

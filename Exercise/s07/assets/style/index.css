@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 1265px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  direction: rtl;
+  background-color: #E6EAEB;
+
+}
+
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-around;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -20;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-family: vazirmatn;
+  font-size: 16;
+}
+.hero {
+  display: flex;
+   justify-content: space-between;
+  /* margin-top: 50; */
+  position: relative;
+}
+.image-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.image-wrapper img {
+  position: absolute;
+  justify-content: center;
+
+}
+.circle {
+  z-index: 1;
+  opacity: 0.5;
+}
+.lim1{
+  z-index: 2;
+  right: 200px;
+  top: 30px;
+}
+.mint{
+  z-index: 3;
+  transform: rotate(-164.34);
+  right: 300px;
+  top: 50;
+}
+.bottle {
+  z-index: 4;
+  right: 150;
+  top: 0;
+}
+
+.kiwi {
+  z-index: 5;
+  transform: rotate(149.27);
+  right: 70px;
+  bottom: 0;
+}
+
+.lemon {
+  z-index: 3;
+  right: 40px; 
+  top: 80px;
+  transform: rotate(105);
+}
+
+.text-box h1 {
+  font-size: 300px;
+  color: #2d7f2d;
+  font-weight: 900;
+  margin-top: 0;
+  text-align: center;
+  /* z-index: 5; */
+}
+
+/* .text-box p {
+  font-size: 20px;
+  color: #555;
+  margin: 10px 0 20px;
+} */
+
+/* .text-box button { */
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
