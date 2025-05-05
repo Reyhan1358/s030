@@ -10,6 +10,34 @@ body {
   background-color: #1e1e1e;
   color: #fff;
   font-family: 'inter', sans-serif;
-  padding: 20px;
 }
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  padding: 20px;
+  background: #0000001F;
+}
+.weather {
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 12px;
+}
+h2{
+  margin-bottom: -12px;
+}
+.dashboard-grid, h2, .temp{
+  font-weight: 500px;
+  font-size: 28px;
+  line-height: 36px;
+  padding-left: 12px;
 
+}
+.dashboard-grid p{
+  font-weight: 500px;
+  font-size: 12px;
+  color: #FFFFFF66 ;
+  line-height: 16px;
+  padding-left: 12px;
+}
