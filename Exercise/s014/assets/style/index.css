@@ -12,13 +12,13 @@ body {
 
 .dashboard-grid {
   display: grid;
-  grid-template-columns: 416px 848px 416px;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 178px 210px 266px;
-  gap: 42px;
+  gap: 15px;
   padding: 20px;
 }
 
-.weather, .schedule, .email {
+.weather, .schedule, .email, .quote, .moods{
   background-color: #2b2b2b;
   padding: 20px;
   border-radius: 12px;
@@ -70,11 +70,13 @@ body {
 }
 
 .wrap {
-  font-family: 'Vazirmatn', sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: white;
   margin: 6px 0;
+  white-space: nowrap;         
+  overflow: hidden; 
+  text-overflow: ellipsis;  
 }
 
 .email img {
@@ -149,4 +151,70 @@ body {
   border-radius: 8px;
   font-size: 20px;
   font-weight: 400;
+}
+.quote {
+  grid-column: 2;
+  grid-row: 2;
+}
+.moods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.moods div {
+  background-color: #3a3a3a;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .weather, .schedule, .email, .quote, .moods, .main-content {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .weather img {
+    position: static;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  .highlight-text {
+    font-size: 16px;
+  }
+
+  .moods {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .highlight-text {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .moods {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs button {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
