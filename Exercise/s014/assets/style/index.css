@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+.container{
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: 'inter', sans-serif;
+  padding: 20px;
+}
+
